@@ -10,7 +10,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // File upload configuration
-const upload = multer({ dest: 'uploads/' });
+const upload = multer({ dest: '/tmp' });
+
 
 // Middleware
 app.use(express.json());
